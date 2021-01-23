@@ -21,5 +21,8 @@
     <ClCompile Include="이코테_4_1상하좌우.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="백준_구현_단어의 개수.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
