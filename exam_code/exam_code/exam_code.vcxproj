@@ -142,6 +142,7 @@
     <ClCompile Include="백준_구현_단어의 개수.cpp" />
     <ClCompile Include="이코테_4_2_시각.cpp" />
     <ClCompile Include="이코테_4_1상하좌우.cpp" />
+    <ClCompile Include="이코테_4_2_왕실의 나이트.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

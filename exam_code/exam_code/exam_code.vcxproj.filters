@@ -24,5 +24,8 @@
     <ClCompile Include="백준_구현_단어의 개수.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="이코테_4_2_왕실의 나이트.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

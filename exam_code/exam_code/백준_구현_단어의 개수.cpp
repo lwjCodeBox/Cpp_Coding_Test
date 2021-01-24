@@ -35,23 +35,23 @@
 /////////////////////////////////////////////////////////////////
 //https://shaeod.tistory.com/304
 // C version - 향상된 버전.
-#include <cstdio>
-int main(void)
-{
-	unsigned int word_cnt = 0;
-	char str[1000002];
-	fgets(str, sizeof(str), stdin);
-	for (unsigned int i = 1; ; i++) {
-		if (str[i] == '\0' || str[i] == '\n') {
-			if (str[i - 1] != 0x20) word_cnt++;
-
-			break;
-		}
-		if (str[i] == 0x20)	word_cnt++;
-	}
-	printf("%d", word_cnt);
-	return 0;
-}
+//#include <cstdio>
+//int main(void)
+//{
+//	unsigned int word_cnt = 0;
+//	char str[1000002];
+//	fgets(str, sizeof(str), stdin);
+//	for (unsigned int i = 1; ; i++) {
+//		if (str[i] == '\0' || str[i] == '\n') {
+//			if (str[i - 1] != 0x20) word_cnt++;
+//
+//			break;
+//		}
+//		if (str[i] == 0x20)	word_cnt++;
+//	}
+//	printf("%d", word_cnt);
+//	return 0;
+//}
 /////////////////////////////////////////////////////////////////
 
 // C++ version
