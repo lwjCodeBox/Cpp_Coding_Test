@@ -32,6 +32,28 @@
 //	return 0;
 //}
 
+/////////////////////////////////////////////////////////////////
+//https://shaeod.tistory.com/304
+// C version - 향상된 버전.
+#include <cstdio>
+int main(void)
+{
+	unsigned int word_cnt = 0;
+	char str[1000002];
+	fgets(str, sizeof(str), stdin);
+	for (unsigned int i = 1; ; i++) {
+		if (str[i] == '\0' || str[i] == '\n') {
+			if (str[i - 1] != 0x20) word_cnt++;
+
+			break;
+		}
+		if (str[i] == 0x20)	word_cnt++;
+	}
+	printf("%d", word_cnt);
+	return 0;
+}
+/////////////////////////////////////////////////////////////////
+
 // C++ version
 //int main(void)
 //{
@@ -53,46 +75,4 @@
 //
 //	cout << word_cnt;
 //	return 0;
-//}
-
-/////////////////////////////////////////////////////////////////
-////https://shaeod.tistory.com/304
-//// C version
-#include <cstdio>
-int main(void)
-{
-	unsigned int word_cnt = 0;
-	char str[10/*1000011*/] = { 0, };
-	unsigned int size = fread(str, 1, 10/*1000011*/, stdin);
-
-	str[size - 2] = 0;
-	
-	for (unsigned int index = 1; index < size-1; index++) {
-		if (str[index] == '\0') {
-			if (str[index-1] != 0x20) word_cnt++;
-			
-			break;
-		}
-			
-		// 0x20 is space
-		if (str[index] == 0x20)	word_cnt++;
-	}
-	printf(">>%d<<", word_cnt);
-	return 0;
-}
-/////////////////////////////////////////////////////////////////
-
-
-// 
-//#include <cstdio>
-//
-//int main() {
-//	int c = 0;
-//	char input[1000011];
-//	unsigned int size = fread(input, 1, 1000011, stdin);
-//	input[size] = 0;
-//	for (int i = 0; input[i]; ++i) {
-//		if (input[i] > 33 && input[i + 1] < 33) c++;
-//	}
-//	printf("%d", c);
 //}
